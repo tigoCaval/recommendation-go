@@ -27,7 +27,8 @@ Algorithms
 
 ## Introduction
 Recommend products using collaborative filtering:
-Example
+
+## Example
 
 Simple demonstration of collaborative filtering:
 
