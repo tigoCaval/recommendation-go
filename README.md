@@ -43,10 +43,19 @@ table := []recommendation.Transaction{
 
 client := recommendation.NewRecommend()
 
-fmt.Println(client.Ranking(table,"John"))    // map[C:1]
-fmt.Println(client.Euclidean(table,"John"))  // map[C:1]
-fmt.Println(client.SlopeOne(table,"John"))   // map[C:1]
-
-
-
+fmt.Println(client.Ranking(table,"John",0))    // map[C:1]
+fmt.Println(client.Euclidean(table,"John,0"))  // map[C:1]
+fmt.Println(client.SlopeOne(table,"John",0))   // map[C:1.5]
 ```
+### Supporting this project
+If you are interested in supporting this project, you can help in many ways. Leave a star :star: or make a donation of any value.
+
+### Sponsor supporting this project
+- []
+
+### Contributors
+ - [Tiago Cavalcante Pereira](https://github.com/tigoCaval) 
+ - [list of contributors](https://github.com/tigoCaval/recommendation-go/graphs/contributors)
+
+### License
+MIT license. See the archive [License](https://github.com/tigoCaval/recommendation-go/blob/main/LICENSE)
