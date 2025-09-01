@@ -20,10 +20,6 @@ Starting with Go modules:
 ```bash
 go get github.com/tigoCaval/recommendation-go
 ```
-Algorithms
-* Ranking
-* Euclidean
-* SlopeOne
 
 ## Introduction
 Recommend products using collaborative filtering:
@@ -47,6 +43,13 @@ fmt.Println(client.Ranking(table,"John",0))    // map[C:1]
 fmt.Println(client.Euclidean(table,"John,0"))  // map[C:1]
 fmt.Println(client.SlopeOne(table,"John",0))   // map[C:1.5]
 ```
+### Algorithms
+| Algorithm     | Description                                                                                  | Output Example |
+| ------------- | -------------------------------------------------------------------------------------------- | -------------- |
+| **Ranking**   | Simple count-based ranking. Recommends items with the highest score (likes/dislikes).        | `map[C:1]`     |
+| **Euclidean** | Distance-based similarity. Finds the most similar users and recommends unseen items.         | `map[C:1]`     |
+| **SlopeOne**  | Predictive algorithm. Uses differences between item ratings to estimate unknown preferences. | `map[C:1.5]`   |
+
 ### Supporting this project
 If you are interested in supporting this project, you can help in many ways. Leave a star :star: or make a donation of any value.
 
